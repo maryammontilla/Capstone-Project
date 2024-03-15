@@ -176,7 +176,8 @@ if page == "Make Predictions!":
         prediction = model.predict(user_input)
         if prediction[0] == 1:
             st.write('The model predicts for hair loss!')
+            st.balloons()
         else:
             st.write('The model predicts for no hair loss!')
         
-        st.balloons()
+        
